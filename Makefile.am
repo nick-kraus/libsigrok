@@ -329,6 +329,12 @@ src_libdrivers_la_SOURCES += \
 	src/hardware/dcttech-usbrelay/protocol.c \
 	src/hardware/dcttech-usbrelay/api.c
 endif
+if HW_CYPRESS_FX3
+src_libdrivers_la_SOURCES += \
+	src/hardware/cypress-fx3/protocol.h \
+	src/hardware/cypress-fx3/protocol.c \
+	src/hardware/cypress-fx3/api.c
+endif
 if HW_DEMO
 src_libdrivers_la_SOURCES += \
 	src/hardware/demo/protocol.h \
